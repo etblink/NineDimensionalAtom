@@ -1,6 +1,7 @@
 import Section from "@/components/layout/section";
 import EquationDisplay from "@/components/equations/equation-display";
 import TorusVisualization from "@/components/visualizations/torus-visualization";
+import ProofSection from "@/components/proofs/proof-section";
 import { Card, CardContent } from "@/components/ui/card";
 import { equations } from "@/lib/equations";
 
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <main className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-8 text-center">Nine-Dimensional Hopf-like Atom Model</h1>
-      
+
       <Section title="Introduction">
         <p className="text-lg mb-6">
           The Nine-Dimensional Hopf-like Atom Model is a theoretical framework that reimagines atomic structure 
@@ -52,7 +53,7 @@ export default function Home() {
             <h3 className="text-xl font-semibold mb-4">Nine-Dimensional Wave Function</h3>
             <EquationDisplay equation={equations.waveFunctionNineD} />
           </div>
-          
+
           <div>
             <h3 className="text-xl font-semibold mb-4">Unified Projection</h3>
             <EquationDisplay equation={equations.unifiedProjection} />
@@ -65,6 +66,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </Section>
+
+      <Section title="Mathematical Proofs">
+        <ProofSection />
       </Section>
 
       <Section title="Physical Implications">
