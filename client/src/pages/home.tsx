@@ -2,6 +2,7 @@ import Section from "@/components/layout/section";
 import EquationDisplay from "@/components/equations/equation-display";
 import TorusVisualization from "@/components/visualizations/torus-visualization";
 import ProofSection from "@/components/proofs/proof-section";
+import PlasmoidsSection from "@/components/sections/plasmoids-section";
 import { Card, CardContent } from "@/components/ui/card";
 import { equations } from "@/lib/equations";
 
@@ -72,6 +73,10 @@ export default function Home() {
         <ProofSection />
       </Section>
 
+      <Section title="Plasmoids and Energy Structures">
+        <PlasmoidsSection />
+      </Section>
+
       <Section title="Physical Implications">
         <div className="space-y-6">
           <p>
@@ -82,6 +87,7 @@ export default function Home() {
             <li>Energy flows and vortex dynamics</li>
             <li>The relationship between scale and dimension</li>
             <li>The emergence of stable atomic structures</li>
+            <li>Formation and stability of plasmoid configurations</li>
           </ul>
         </div>
       </Section>
